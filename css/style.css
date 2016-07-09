@@ -1,0 +1,48 @@
+@import 'https://fonts.googleapis.com/css?family=Candal|Orbitron:900';
+
+body {
+  background: #1a1a1a;
+  text-align: center;
+  font-size: 300%;
+  color: #ffffff;
+  cursor:default;
+  font-family: "Orbitron", "Candal", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 300%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  transition: all 0.5s ease;
+}
+
+.title:hover {
+  color: #119DA4;
+}
+
+.location, .temp, .descript, .humid, .wind, .sunR, .sunS, .icon {
+  transition: all 0.5s ease;
+}
+
+.location:hover, .temp:hover, .descript:hover, .humid:hover, .wind:hover, .sunR:hover, .sunS:hover, .icon:hover {
+  transform: scale(1.8);
+  color: #119DA4;
+}
+/* Color options
+119DA4
+CA054D
+*/
+
+
+ul {
+  list-style-type: none;
+}
+
+
+
+
+
+
+
