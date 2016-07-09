@@ -1,12 +1,12 @@
 $(document).ready(function () {
   var lat, lon, city, country, tempVersion, tempF, tempC, description, humid, windDirection, windMPH, windKMH, sunR, sunS, icon;
-  
+
   function degToCompass(deg) {
     var com = parseInt((deg/22.5) + 0.5);
     var comArray = ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
     return comArray[(com % 16)];
   }
-  
+
   function unixToStandard(timestamp) {
   var date = new Date(timestamp * 1000),
 		h = date.getHours(),
@@ -26,8 +26,8 @@ $(document).ready(function () {
 	time = hour + ":" + min + " " + ampm;
 	return time;
 }
-  
-  
+
+
   lat = 30;
   lon = 50;
   var api = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon +"&appid=c2ded55aa9309075528cf63c7e2474d0";

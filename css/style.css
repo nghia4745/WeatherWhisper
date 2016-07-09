@@ -7,12 +7,10 @@ body {
   color: #ffffff;
   cursor:default;
   font-family: "Orbitron", "Candal", sans-serif;
-  width: 100%;
-  height: 100%;
 }
 
 .title {
-  font-size: 300%;
+  font-size: 250%;
   margin-top: 5%;
   margin-bottom: 2%;
   transition: all 0.5s ease;
@@ -38,11 +36,5 @@ CA054D
 
 ul {
   list-style-type: none;
+  overflow-x: hidden;
 }
-
-
-
-
-
-
-
