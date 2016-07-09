@@ -26,10 +26,10 @@ $(document).ready(function () {
 	time = hour + ":" + min + " " + ampm;
 	return time;
 }
+  lat = 31.9686;
+  lon = 99.9018;
 
 
-  lat = 30;
-  lon = 50;
   var api = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon +"&appid=c2ded55aa9309075528cf63c7e2474d0";
 
   console.log(api);
