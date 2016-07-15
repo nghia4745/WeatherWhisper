@@ -9,29 +9,35 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
     <script src="js/index.js"></script>
   </head>
-<body class="container-fluid">
-  <div class="layout">
-    <label class="title">&#9729;WeatherWhisper&#8482;</label>
-  </div>
-  <div class="content">
-    <ul>
-      <li class="location"></li>
-      <li class="temp"></li>
-      <li class="descript"></li>
-      <li class="humid"></li>
-      <li class="wind"></li>
-      <li class="sunR"></li>
-      <li class="sunS"></li>
-      <img width= "100px" height="100px" class="icon">
-    </ul>
-  </div>
-</body>
+  <body class="container">
+    <div class="layout">
+      <label class="title">&#9729;WeatherWhisper&#8482;</label><br>
+      <div class="alert alert-info fade in"><label>Please Enter a <em>City, Country</em> &#9996;</label><label class="closeBtn">&#10060;</label>
+      </div>
+      <input type="text" class="form-control textInput" placeholder="&#9998; City, Country" data-toggle="toolTip" title="Ex. Houston, US">
+      <button class="btn enterBtn">Enter</button>
+      <button class="btn toggleBtn">Units</button>
+      <img width="100px" height="100px" class="icon" alt="weatherIcon" data-toggle="toolTip" title="Status" src="#">
+    </div>
+    <div class="content row">
+      <ul class="col-xs-6">
+        <li class="location" data-toggle="toolTip" title="Location"></li>
+        <li class="tempF" data-toggle="toolTip" title="Temperature"></li>
+        <li class="tempC" data-toggle="toolTip" title="Temperature"></li>
+        <li class="descript" data-toggle="toolTip" title="Description"></li>
+      </ul>
+      <ul class="col-xs-6">
+        <li class="humid" data-toggle="toolTip" title="Humidity"></li>
+        <li class="windMPH" data-toggle="toolTip" title="Wind Speed & Direction"></li>
+        <li class="windMS" data-toggle="toolTip" title="Wind"></li>
+        <li class="sunRS" data-toggle="toolTip" title="Sunrise/Sunset"></li>
+      </ul>
+    </div>
+
+  </body>
+
 </html>
 <!--
 TO-DO:
--Add toggle functionality for different units
 -Make website reponsive to multiple screen resolutions
--Add better dynamic icons
--Add Current Time
--Cannot use geolocation. Create another way for user to input location info
 -->
